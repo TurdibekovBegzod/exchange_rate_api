@@ -4,15 +4,15 @@ from asyncio import run
 
 
 dp = Dispatcher()
-bot = Bot(token = "8199482266:AAGYVKCQXYxXdZ7RdxxlIFcAqaXXn1g8LGc")
+bot = Bot(token = "Your bot token")
 #===================================
 async def startup(bot : Bot):
-    await bot.send_message(chat_id = "7708456933", text = "Bot ishga tushdi! ✅")
+    await bot.send_message(chat_id = "Your tg id.", text = "Bot ishga tushdi! ✅")
 
 from collections import deque
 
 async def shutdown(bot : Bot):
-    await bot.send_message(chat_id = "7708456933", text = "Bot ishdan to'xtadi! ❌")
+    await bot.send_message(chat_id = "your tg id", text = "Bot ishdan to'xtadi! ❌")
 
 #=================================================
 async def main():
